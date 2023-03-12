@@ -1,6 +1,7 @@
 import os
 import tarfile
 from six.moves import urllib
+from matplotlib import pyplot as plt
 
 
 DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml2/master/"
@@ -114,7 +115,7 @@ print(housing_cat_encoded[:10])
 
 # 1 or 0
 from sklearn.preprocessing import OneHotEncoder
- cat_encoder = OneHotEncoder()
+cat_encoder = OneHotEncoder()
 housing_cat_1hot = cat_encoder.fit_transform(housing_cat)
- housing_cat_1hot
+print(housing_cat_1hot)
 
