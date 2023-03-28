@@ -83,7 +83,7 @@ class SCANS_ML:
     def correct_values(self,value):
         value=float(value)
         new_val=value
-        if value<0 or value>360:
+        if value<-360 or value>360:
             new_val=value/100
 
         return new_val
