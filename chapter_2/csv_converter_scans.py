@@ -61,7 +61,7 @@ class SCANS_ML:
 
     def convert_into_groups(self,data_list):
         list_tuples=[]
-        self.dict_dist={self.b:0,self.c:0,self.d:0,self.e:0,self.f:0,self.g:0,self.h:0,self.i:0,self.k:0}
+        self.dict_dist={self.b:None,self.c:None,self.d:None,self.e:None,self.f:None,self.g:None,self.h:None,self.i:None,self.k:None}
         data=list(data_list.split("], ["))
         #print(data)
         for string_data in data:
